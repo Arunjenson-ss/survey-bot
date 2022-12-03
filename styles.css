@@ -615,5 +615,8 @@ font-weight: 500;
     .popup-start{
       justify-content:center;
     }
+    .main{
+      background: url(./banner-mobile.png)no-repeat center;
+    }
     
   }
