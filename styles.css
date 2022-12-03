@@ -616,7 +616,7 @@ font-weight: 500;
       justify-content:center;
     }
     .main{
-      background: url(./banner-mobile.png)no-repeat center;
+      background: url(./banner-mobile.png)no-repeat left/cover;
     }
     
   }
