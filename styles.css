@@ -19,20 +19,22 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .main-container{
+  /* position: relative; */
     max-width: 1440px;
     margin: 0 auto;
 }
 .main{
     background: url(./Banner.png) no-repeat center ;
     height: 100vh;
-    width: 100vw;
     position: relative;
 }
-a{
+a,nav{
     color: white;
 }
 .login a{
     color: black;
+    min-width: 20%
+    ;
 }
 nav {
     color: white;
@@ -50,6 +52,7 @@ nav {
     background: transparent;
     border-color: transparent;
     cursor: pointer;
+    color: white;
   }
   .login{
     padding: .5rem  1.5rem;
@@ -69,16 +72,14 @@ font-weight: 600;  }
   .logo {
     height: 40px;
   }
-  li {
-    width: 18%;
-    margin-left: 2rem;
-}
+  
   .links a {
     font-size: 1rem;
     text-transform: capitalize;
     text-decoration: none;
     display: block;
     padding: 0.5rem 1rem;
+    
   }
   .links a:hover {
     padding-left: 1.5rem;
@@ -89,10 +90,13 @@ font-weight: 600;  }
     height: 0;
     overflow: hidden;
     color: white !important;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .show-links {
-    height: 12rem;
+    height: 14rem;
   }
   
   
@@ -122,7 +126,7 @@ font-weight: 600;  }
     height: 4rem;
     background-color: white;
     border-radius:50% 50% 0 50% ;
-    box-shadow:  10px #888888;
+   
     cursor: pointer;
   }
   .fixed:hover{
@@ -244,7 +248,7 @@ font-weight: 500;
   /* input field */
   .input-bar{
     width: 80%;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     display: flex;
   }
   input::placeholder {
@@ -370,6 +374,7 @@ font-weight: 500;
       display: none;
     }
     .links {
+      flex-direction: row;
         align-items: center;
       height: auto;
       display: flex;
@@ -398,20 +403,7 @@ font-weight: 500;
     
       /* fixed */
     
-      .fixed{
-        position: fixed;
-        bottom: 5%;
-        right: 5%;
-        width: 4rem;
-        height: 4rem;
-        background-color: white;
-        border-radius:50% 50% 0 50% ;
-        box-shadow:  10px #888888;
-        cursor: pointer;
-      }
-      .fixed:hover{
-        animation: bounce 3s ease-in-out infinite;
-      }
+      
       .fixed img{
         position:absolute;
         top: 1.1rem;
@@ -614,4 +606,14 @@ font-weight: 500;
         background-color:#4c5aa1 ;
         border-radius :50%
       }
+  }
+
+  @media screen and (max-width:425px) {
+    .first-popup,.main-popup{
+      width: 90%;
+    }
+    .popup-start{
+      justify-content:center;
+    }
+    
   }
