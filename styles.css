@@ -618,5 +618,7 @@ font-weight: 500;
     .main{
       background: url(./banner-mobile.png)no-repeat left/cover;
     }
+.text {
+    color: rgb(54, 54, 54)
     
-  }
+  }}
