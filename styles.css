@@ -19,7 +19,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .main-container{
-  /* position: relative; */
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -36,10 +35,6 @@ a,nav{
     min-width: 20%
     ;
 }
-nav {
-    color: white;
-
-  }
   .nav-header {
     display: flex;
     align-items: center;
@@ -119,19 +114,18 @@ font-weight: 600;  }
   /* fixed */
 
   .fixed{
-    position: fixed;
+    position: absolute;
     bottom: 5%;
     right: 5%;
     width: 4rem;
     height: 4rem;
     background-color: white;
     border-radius:50% 50% 0 50% ;
-   
     cursor: pointer;
   }
-  .fixed:hover{
+  /* .fixed:hover{
     animation: bounce 3s ease-in-out infinite;
-  }
+  } */
   .fixed img{
     position:absolute;
     top: 1.1rem;
@@ -169,6 +163,9 @@ font-weight: 600;  }
 /* width: 30%; */
 /* border: 1px solid black; */
   }
+
+
+  
   .popup-heading{
    padding: .5rem 1rem ;
    border-radius: 5px;
@@ -411,6 +408,9 @@ font-weight: 500;
         width: 28px;
         height: 35px;
         visibility: visible;
+      }
+      .normal-hide{
+        visibility: hidden;
       }
       .hide{
         visibility: hidden !important;

@@ -21,6 +21,7 @@ toggle.addEventListener('click',()=>{
 fixed.addEventListener('click',()=>{
     if(closed.classList.contains('show-close')){
         closed.classList.remove('show-close');
+        // closed.classList.remove('normal-hide')
         logo.classList.remove('hide');
         first.classList.remove('show-close');
         main.classList.remove('show-close');
@@ -28,6 +29,7 @@ fixed.addEventListener('click',()=>{
     }
     else{
         closed.classList.add('show-close');
+        closed.classList.add('normal-hide');
         logo.classList.add('hide')
         first.classList.add('show-close');
     }
@@ -42,6 +44,9 @@ input.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
       event.preventDefault();
     work();
+    }
+    else{
+        // fixed.classList.add('normal-hide')
     }
     });
 
