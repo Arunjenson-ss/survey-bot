@@ -470,6 +470,7 @@ font-weight: 500;
         display: flex;
         padding: 1rem;
         border-radius: 2rem;
+        justify-content: center;
         width: 51%;
         gap: 5px;
         margin: 1rem 3rem 2rem 3.5rem;
