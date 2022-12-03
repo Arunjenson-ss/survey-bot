@@ -33,6 +33,8 @@ fixed.addEventListener('click',()=>{
         logo.classList.add('hide')
         first.classList.add('show-close');
     }
+    links.classList.remove('show-links');
+
 })
 start.addEventListener('click',()=>{
     first.classList.remove('show-close');
