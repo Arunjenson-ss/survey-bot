@@ -384,9 +384,9 @@ font-weight: 500;
       padding: 0;
       background: transparent;
     }
-    main{
+    /* main{
         width: 100%;
-      }
+      } */
       .text{
         font-size: 5rem;
         width: 27%;
@@ -623,3 +623,23 @@ font-weight: 500;
     color: rgb(54, 54, 54)
     
   }}
+ 
+
+  @media screen and (min-width:1445px) {
+    .main {
+      background: url(./Banner.png) no-repeat;
+      height: 100%;
+    }
+    .main-container{
+      height: 868px;
+    }
+  }
+  @media screen and (min-height:868px) {
+
+    .main {
+      background: url(./Banner.png) no-repeat;
+      height: 100%;}
+      .main-container{
+        height: 868px;
+      }
+  }
