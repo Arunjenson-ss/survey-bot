@@ -18,10 +18,10 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.main-container{
+/* .main-container{
     max-width: 1440px;
     margin: 0 auto;
-}
+} */
 .main{
     background: url(./Banner.png) no-repeat center ;
     height: 100vh;
@@ -628,7 +628,7 @@ font-weight: 500;
   @media screen and (min-width:1445px) {
     .main {
       background: url(./Banner.png) no-repeat;
-      height: 100%;
+      background-size: 100% 100%;
     }
     .main-container{
       height: 868px;
@@ -638,7 +638,9 @@ font-weight: 500;
 
     .main {
       background: url(./Banner.png) no-repeat;
-      height: 100%;}
+      background-size: 100% 100%;
+    
+    }
       .main-container{
         height: 868px;
       }
